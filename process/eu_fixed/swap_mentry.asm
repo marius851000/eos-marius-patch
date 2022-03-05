@@ -7,7 +7,7 @@
 ; Returns: nothing
 ; ------------------------------------------------------------------------------
 
-; by Adex
+; by Irdkwia
 
 .relativeinclude on
 .nds
