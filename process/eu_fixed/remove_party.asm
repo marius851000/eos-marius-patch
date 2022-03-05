@@ -30,7 +30,7 @@
 ;.definelabel assembly_pointer, 0x020b138c
 
 ; File creation
-.create "./code_out.bin", 0x022E7B88 ; Change to the actual offset as this directive doesn't accept labels
+.create "./code_out.bin", 0x022E7248 ; Change to the actual offset as this directive doesn't accept labels
 	.org ProcStartAddress
 	.area MaxSize ; Define the size of the area
 		stmdb  r13!,{r9,r10}
