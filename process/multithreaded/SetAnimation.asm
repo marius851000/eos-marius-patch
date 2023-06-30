@@ -1,6 +1,6 @@
 ; ------------------------------------------------------------------------------
 ; Multithreaded SetAnimation
-; Same as SetAnimation, but can be called while other code of the actor is running
+; Same as the SetAnimation function, but can be called while other code of the actor is running
 ; Param 1: Actor ID
 ; Param 2: Animation ID
 ; Returns: nothing
