@@ -1,0 +1,21 @@
+<PMD2>
+  <ASMPatchesConstants>
+    <Patches>
+      <Game id="EoS_NA">
+        <Patch id="SndStream" >
+          <OpenBin filepath="arm9.bin">
+            <Include filename ="sndstream_na.asm"/>
+          </OpenBin>
+        </Patch>
+      </Game>
+      <Game id="EoS_EU">
+        <Patch id="SndStream" >
+          <OpenBin filepath="arm9.bin">
+            <Include filename ="sndstream_eu.asm"/>
+          </OpenBin>
+        </Patch>
+      </Game>
+    </Patches>
+  </ASMPatchesConstants>
+</PMD2>
+

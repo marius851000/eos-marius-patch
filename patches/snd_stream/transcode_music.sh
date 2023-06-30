@@ -9,7 +9,7 @@
 
 #ffmpeg -i "Vylet Pony - Way of the Dodo [2579117276].mp3" -ac 1 -ar 44100 -sample_fmt s16 -f wav rom/data/SOUND/BGM/streamed_1.wav
 #ffmpeg -i "Heaven1.ogg" -to 5 -ac 1 -ar 44100 -sample_fmt s16 -f wav test_in/A8.wav
-cp --reflink=auto "village_trans.wav" "rom/data/SOUND/BGM/streamed_1.wav"
-#ffmpeg -i "Heaven1.ogg" -ac 1 -ar 44100 -sample_fmt s16 -f wav "rom/data/SOUND/BGM/streamed_2.wav"
-cp --reflink=auto "Ball1ch.wav" "rom/data/SOUND/BGM/streamed_2.wav"
-ffmpeg -i "Enchanted Festival/Enchanted Festival Loop.wav" -ac 1 -ar 44100 -sample_fmt s16 -f wav "rom/data/SOUND/BGM/streamed_3.wav"
+#cp --reflink=auto "village_trans.wav" "rom/data/SOUND/BGM/streamed_1.wav"
+ffmpeg -i "Heaven1.ogg" -ac 1 -ar 44100 -sample_fmt s16 -f wav "rom/data/SOUND/BGM/streamed_1.wav"
+#cp --reflink=auto "Ball1ch.wav" "rom/data/SOUND/BGM/streamed_2.wav"
+#ffmpeg -i "Enchanted Festival/Enchanted Festival Loop.wav" -ac 1 -ar 44100 -sample_fmt s16 -f wav "rom/data/SOUND/BGM/streamed_3.wav"

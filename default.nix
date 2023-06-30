@@ -46,6 +46,18 @@ let
 
   patches = [
     (make_simple_patch "faster_flush_mode_4" ./patches/faster_flush_mode_4)
+    (make_simple_patch "snd_stream" (pkgs.stdenv.mkDerivation {
+      name = "snd_stream_patch_source";
+      dontUnpack = true;
+
+      installPhase = ''
+        mkdir -p $out
+        cp ${./patches/snd_stream/patch.py} $out/patch.py
+        cp ${./patches/snd_stream/config.xml} $out/config.xml
+        cp ${./patches/snd_stream/new_snd_stream_official_v2_looppoint_fix_eu.asm} $out/sndstream_eu.asm
+        cp ${./patches/snd_stream/new_snd_stream_official_v2_looppoint_fix.asm} $out/sndstream_na.asm
+      '';
+    }))
   ];
 in
   make_patches_folder patches
